@@ -8,13 +8,17 @@ function collectArr() {
         arr.push(newStr);
     }
 
-    function compareNumeric(a, b) {
-        if (a > b) return 1;
-        if (a === b) return 0;
-        if (a < b) return -1;
+
+
+
+
+    function compareStr(a, b) {
+        if (a.length > b.length) return 1;
+        if (a.length === b.length) return 0;
+        if (a.length < b.length) return -1;
     }
 
-    let result = arr.sort(compareNumeric);
+    let result = arr.sort(compareStr);
     alert(result)
 }
 
